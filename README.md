@@ -48,6 +48,7 @@ CREATE TABLE spotify(
 	most_playedon VARCHAR(50)
 );
 ```
+<img src='Visualizations/erd.png'/>
 
 ## Business Problems and Solutions
 
@@ -269,22 +270,7 @@ all_difference_min_max
 ORDER BY 1
 ```
 
-<img src='Visualizations/3.png'/>
 
-## Author - Dhananjoy
-
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
-
-### Stay Updated and Join the Community
-
-For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
-
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/dhananjoy01)
-- **Portfolio**: [My Data Science Portfolio](https://www.datascienceportfol.io/dhananjoychandro01)
-- **GitHub**: [My GitHub Profile](https://github.com/dhananjoy01)
-- **Gmail**: dhananjoychandro01@gmail.com
-
-Thank you for your support, and I look forward to connecting with you!
 
 
 
@@ -347,4 +333,21 @@ This query uses a `WITH` clause (Common Table Expression) to first find the maxi
 - **Artist Performance:** Identifying top tracks and total track counts per artist helps in understanding artist productivity and their impact on the platform.
 
 This analysis provides a comprehensive view of Spotify's content and can help in understanding music trends, user engagement, and content strategy.
+
+<img src='Visualizations/3.png'/>
+
+## Author - Dhananjoy
+
+This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+
+### Stay Updated and Join the Community
+
+For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
+
+- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/dhananjoy01)
+- **Portfolio**: [My Data Science Portfolio](https://www.datascienceportfol.io/dhananjoychandro01)
+- **GitHub**: [My GitHub Profile](https://github.com/dhananjoy01)
+- **Gmail**: dhananjoychandro01@gmail.com
+
+Thank you for your support, and I look forward to connecting with you!
 
