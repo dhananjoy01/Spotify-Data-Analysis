@@ -1,4 +1,6 @@
-# Spotify Data Analysis using SQL
+<img src='Visualizations/front_image.jpg'/>
+
+## Spotify Data Analysis using SQL
 
 ## Overview
 This project involves a comprehensive analysis of Spotify's music data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset.
@@ -9,10 +11,13 @@ This project involves a comprehensive analysis of Spotify's music data using SQL
 - Identify popular tracks, artists, and albums based on streams, views, and likes.
 - Explore relationships between track characteristics and user engagement.
 
+<img src='Visualizations/1.png'/>
+
 ## Dataset
 
 The data for this project is assumed to be loaded into a table named `spotify`.
 
+<img src='Visualizations/2.png'/>
 ## Schema
 
 ```sql
@@ -46,7 +51,32 @@ CREATE TABLE spotify(
 
 ## Business Problems and Solutions
 
-### Easy Level
+
+Business problems:
+```sql
+-- ## Analysis question --
+
+-- ### Easy Level
+-- 1. Retrieve the names of all tracks that have more than 1 billion streams.
+-- 2. List all albums along with their respective artists.
+-- 3. Get the total number of comments for tracks where `licensed = TRUE`.
+-- 4. Find all tracks that belong to the album type `single`.
+-- 5. Count the total number of tracks by each artist.
+
+-- ### Medium Level
+-- 1. Calculate the average danceability of tracks in each album.
+-- 2. Find the top 5 tracks with the highest energy values.
+-- 3. List all tracks along with their views and likes where `official_video = TRUE`.
+-- 4. For each album, calculate the total views of all associated tracks.
+-- 5. Retrieve the track names that have been streamed on Spotify more than YouTube.
+
+-- ### Advanced Level
+-- 1. Find the top 3 most-viewed tracks for each artist using window functions.
+-- 2. Write a query to find tracks where the liveness score is above the average.
+-- 3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
+```
+Solving Business Problems
+### Easy Level 
 
 ### 1. Retrieve the names of all tracks that have more than 1 billion streams.
 
@@ -239,6 +269,8 @@ all_difference_min_max
 ORDER BY 1
 ```
 
+<img src='Visualizations/3.png'/>
+
 ## Author - Dhananjoy
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
@@ -275,6 +307,7 @@ This query filters tracks to show only those released as singles. This is useful
 **5. Count the total number of tracks by each artist.**
 This query groups tracks by `artist` and counts the total number of songs each artist has. It helps identify prolific artists and their contribution to the platform.
 
+<img src='Visualizations/4.png'/>
 #### Medium Level
 
 **1. Calculate the average danceability of tracks in each album.**
@@ -304,6 +337,7 @@ This query identifies tracks with a `liveness` score higher than the overall ave
 This query uses a `WITH` clause (Common Table Expression) to first find the maximum and minimum `energy` values for each album. Then, it calculates the difference, providing a measure of the energy variation within an album. This helps in understanding the dynamic range of an album's sound.
 
 
+<img src='Visualizations/5.png'/>
 
 ## Findings and Conclusion
 
